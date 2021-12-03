@@ -5,7 +5,7 @@
 #### Käyttö: kopioi koko rivi bookmarkin urlin tilalle ja tallenna sille haluamasi nimi. Kun selaat iltalehden plus-artikkeleita, voit avata bookmarkin (bookmarkletin) jolloin se ajaa javascript-koodin ja renderöi edellämainitun jsonin.\
 https://www.freecodecamp.org/news/what-are-bookmarklets/
 ```
-javascript:(()=>{let doc=document.getElementsByClassName("article-body")[0];doc.innerHTML="";doc.style.cssText="padding:20px;font-size:18px;";Object.values(window.App.state.articles)[0].items.body.map((a)=>{let dive=document.createElement("div");try{dive.innerText=a.items.map((b)=>{return b.text?b.text:b.items[0].text;});}catch(e){if(a.type=="subheadline"){dive=document.createElement("H3");dive.innerText=a.text;}else if(a.type=="image"){dive=document.createElement("img");dive.src=a.urls.default;}}try{doc.appendChild(dive);}catch(e){};});})();
+javascript:(()=>{let doc=document.getElementsByClassName("article-body")[0];doc.innerHTML="";doc.style.cssText="padding:20px;font-size:18px;";Object.values(window.App.state.articles)[0].items.body.map((a)=>{let dive=document.createElement("div");try{dive.innerText=a.items.map((b)=>{return b.text?b.text:b.items[0].text;})+"\n\n";}catch(e){if(a.type=="subheadline"){dive=document.createElement("H3");dive.innerText=a.text+"\n";}else if(a.type=="image"){dive=document.createElement("img");dive.src=a.urls.default;}}try{doc.appendChild(dive);}catch(e){};});})();
 ```
 
 
