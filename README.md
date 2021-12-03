@@ -35,12 +35,14 @@ let doc = document.getElementsByClassName("article-body")[0];
 ```
 
 ### Troubleshoot:
-- Skripti ei toimi! Iham paskaa1!
-- - Päivitä sivu kun olet avannut artikkelin. Joskus json ei lataudu ensimmäisellä avauksella.
-- Edellisen artikkelin tekstit tuli tähän vaikka avasin uuden artikkelin?! Iham paskaa1!
-- - Päivitä sivu ja kokeile uudelleen.
-- Kokeilin edellisiä ohjeita eikä toimi vieläkään... Iham paskaa1!
-- - Iltalehti lienee korjannut virheensä ja piilottanut artikkelin maksumuurin taakse. Olisit kokeillut aiemmin!
+Q: Skripti ei toimi! Iham paskaa1!
+A: Päivitä sivu kun olet avannut artikkelin. Joskus json ei lataudu ensimmäisellä avauksella.
+
+Q: Edellisen artikkelin tekstit tuli tähän vaikka avasin uuden artikkelin?! Iham paskaa1!
+A: Päivitä sivu ja kokeile uudelleen.
+
+Q: Kokeilin edellisiä ohjeita eikä toimi vieläkään... Iham paskaa1!
+A: Iltalehti lienee korjannut virheensä ja piilottanut artikkelin maksumuurin taakse. Olisit kokeillut aiemmin!
 
 ## In English:
 Paste either of the scripts to browser developer console and enjoy clickbait articles of il.fi
